@@ -19,82 +19,202 @@
 <body class="min-h-screen flex flex-col relative">
 
     <main>
-        <!-- Navbar -->
-        <nav class="w-full h-screen overflow-hidden bg-none absolute top-0 left-0">
-            <div
-                class="max-w-375 mx-auto px-2 md:px-6 py-24 md:py-5 flex items-center md:items-start justify-between relative">
-                <div class="absolute top-5 left-1/2 -translate-x-1/2 layer layer_2 z-30" data-speed="2.0">
-                    <div class="flex justify-center items-center">
+        <section class="relative overflow-hidden bg-linear-to-b from-[#533033] via-[#240B12] to-[#09040A]">
+            <div class="bg-linear-to-b from-background via-background to-[#160a0e]">
+                <section class="bg-sky relative overflow-hidden">
+                    
+                    <!-- Navbar -->
+                    <nav class="w-full h-screen overflow-hidden bg-none absolute top-0 left-0">
+                        <div
+                            class="max-w-375 mx-auto px-2 md:px-6 py-24 md:py-5 flex items-center md:items-start justify-between relative">
+                            <div class="absolute top-5 left-1/2 -translate-x-1/2 layer layer_2 z-30" data-speed="2.0">
+                                <div class="flex justify-center items-center">
 
-                        <div class="flex gap-6 group relative">
-                            <div class="relative peer/item1">
-                                <div class="flex justify-center items-center bg-dark_blue rounded-full w-13 h-13 text-3xl text-white cursor-pointer 
+                                    <div class="flex gap-6 group relative">
+                                        <div class="relative peer/item1">
+                                            <div class="flex justify-center items-center bg-dark_blue rounded-full w-13 h-13 text-3xl text-white cursor-pointer 
                            hover:scale-125 duration-500 shadow-icon">
-                                    <a href="https://github.com/Kaique-GM" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
+                                                <a href="https://github.com/Kaique-GM" target="_blank">
+                                                    <i class="fa-brands fa-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
 
-                            <div class="relative peer/item2">
-                                <div class="flex justify-center items-center bg-dark_blue rounded-full w-13 h-13 text-3xl text-white cursor-pointer 
+                                        <div class="relative peer/item2">
+                                            <div class="flex justify-center items-center bg-dark_blue rounded-full w-13 h-13 text-3xl text-white cursor-pointer 
                            hover:scale-125 duration-500 shadow-icon">
-                                    <a href="https://www.linkedin.com/in/kaique-gm/" target="_blank">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
+                                                <a href="https://www.linkedin.com/in/kaique-gm/" target="_blank">
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
 
-                            <div class="relative peer/item3">
-                                <div class="flex justify-center items-center bg-dark_blue rounded-full w-13 h-13 text-3xl text-white cursor-pointer 
+                                        <div class="relative peer/item3">
+                                            <div class="flex justify-center items-center bg-dark_blue rounded-full w-13 h-13 text-3xl text-white cursor-pointer 
                            hover:scale-125 duration-500 shadow-icon">
-                                    <a href="mailto:kaiquegmoficial@gmail.com">
-                                        <i class="fa-solid fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
+                                                <a href="mailto:kaiquegmoficial@gmail.com">
+                                                    <i class="fa-solid fa-envelope"></i>
+                                                </a>
+                                            </div>
+                                        </div>
 
-                            <div class="absolute -bottom-4 left-0 h-1 w-full bg-dark_blue rounded-full duration-500 ease-in-out shadow-bar
+                                        <div class="absolute -bottom-4 left-0 h-1 w-full bg-dark_blue rounded-full duration-500 ease-in-out shadow-bar
                        group-hover:w-13
                        group-hover:left-0
                        peer-hover/item1:left-[0%]
                        peer-hover/item2:left-[38%]
                        peer-hover/item3:left-[75%]"></div>
 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="lang-switch" class="z-50 layer layer_2" data-speed="2.0">
+                                <div
+                                    class="border-[1.5px] border-background rounded-full flex py-0.4 px-4 gap-4  hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 ">
+                                    <button data-lang="en" class="lang-btn duration-300 cursor-pointer">
+                                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fa-1f1f8.svg"
+                                            width="30" draggable="false">
+                                    </button>
+                                    <span class="text-background opacity-70 font-semibold text-3xl select-none">/</span>
+
+                                    <button data-lang="pt" class="lang-btn duration-300 cursor-pointer">
+                                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1e7-1f1f7.svg"
+                                            width="30" draggable="false">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="relative flex flex-col justify-center items-end text-background font-jersey text-3xl md:text-[36px] z-45 layer layer_2"
+                                data-speed="2.0">
+                                <button
+                                    onclick="document.querySelector('#sobre').scrollIntoView({ behavior: 'smooth' })"
+                                    class="hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 md:leading-12 cursor-pointer">Sobre
+                                    mim
+                                </button>
+                                <button
+                                    onclick="document.querySelector('#projetos').scrollIntoView({ behavior: 'smooth' })"
+                                    class="hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 md:leading-12 cursor-pointer">Meus
+                                    Projetos
+                                </button>
+                                <button
+                                    onclick="document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' })"
+                                    class="hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 md:leading-12 cursor-pointer">
+                                    Skills</button>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="relative w-full h-screen overflow-hidden">
+                        <img class="absolute inset-0 w-full h-full object-cover layer z-10" data-speed="0.85"
+                            src="/assets/images/banner/normal/1_Clouds.webp" alt="Clouds Banner"
+                            draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover layer z-20" data-speed="0.75"
+                            src="/assets/images/banner/normal/2_Montains.webp" alt="Montains Banner"
+                            draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover layer z-30  overflow-visible"
+                            data-speed="0.60" src="/assets/images/banner/normal/3_Montains.webp"
+                            alt="Montains 2 Banner" draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover layer z-40" data-speed="0.65"
+                            src="/assets/images/banner/normal/4_Montains.webp" alt="Montains 3 Banner"
+                            draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover z-50"
+                            src="/assets/images/banner/normal/5_Birds.webp" alt="Birds Banner" draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover z-60"
+                            src="/assets/images/banner/normal/6_Birds.webp" alt="Birds Banner" draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover layer z-70" data-speed="0.35"
+                            src="/assets/images/banner/normal/7_Bridge.webp" alt="Bridge Banner"
+                            draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover layer z-80" data-speed="0.20"
+                            src="/assets/images/banner/normal/8_Forest.webp" alt="Forest Banner"
+                            draggable="false">
+
+                        <img class="absolute inset-0 w-full h-full object-cover z-90"
+                            src="/assets/images/banner/normal/9_Forest.webp" alt="Forest 2 Banner"
+                            draggable="false">
+                    </div>
+
+                    <div
+                        class="absolute top-[34%] md:top-[30%] 2xl:top-[32%] translate-y-4 md:translate-y-2 2xl:translate-y-3 left-1/2 -translate-x-1/2 text-center font-jersey text-letters w-full z-80">
+                        <div class="flex justify-center items-center">
+                            <div class="flex flex-col justify-center items-start">
+                                <span
+                                    class="md:-ml-3 text-3xl md:text-[36px] text-background leading-5 md:leading-none text-start layer layer_2"
+                                    data-speed="1.8">Oi, eu sou</span>
+                                <h1 class="text-6xl md:text-[96px] md:leading-16 layer layer_2" data-speed="2.0">
+                                    Kaique Mattos
+                                </h1>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="lang-switch" class="z-50 layer layer_2" data-speed="2.0">
-                    <div
-                        class="border-[1.5px] border-background rounded-full flex py-0.4 px-4 gap-4  hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 ">
-                        <button data-lang="en" class="lang-btn duration-300 cursor-pointer">
-                            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fa-1f1f8.svg"
-                                width="30" draggable="false">
-                        </button>
-                        <span class="text-background opacity-70 font-semibold text-3xl select-none">/</span>
+                    <div class="absolute bottom-5 px-5 z-90 w-full arrows-container" data-speed="0.10">
+                        <div class="w-full flex justify-between">
+                            <div class="flex flex-col items-center -space-y-3">
+                                <svg class="w-8 h-8 text-white arrow" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5.5 9.5C8 12.5 10 14.5 12 16C14 14.5 16 12.5 18.5 9.5"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
 
-                        <button data-lang="pt" class="lang-btn duration-300 cursor-pointer">
-                            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1e7-1f1f7.svg"
-                                width="30" draggable="false">
-                        </button>
+                                <svg class="w-8 h-8 text-white arrow" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5.5 9.5C8 12.5 10 14.5 12 16C14 14.5 16 12.5 18.5 9.5"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <svg class="w-8 h-8 text-white arrow" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5.5 9.5C8 12.5 10 14.5 12 16C14 14.5 16 12.5 18.5 9.5"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="flex flex-col items-center -space-y-3">
+                                <svg class="w-8 h-8 text-white arrow" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5.5 9.5C8 12.5 10 14.5 12 16C14 14.5 16 12.5 18.5 9.5"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <svg class="w-8 h-8 text-white arrow" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5.5 9.5C8 12.5 10 14.5 12 16C14 14.5 16 12.5 18.5 9.5"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <svg class="w-8 h-8 text-white arrow" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5.5 9.5C8 12.5 10 14.5 12 16C14 14.5 16 12.5 18.5 9.5"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="relative flex flex-col justify-center items-end text-background font-jersey text-3xl md:text-[36px] z-45 layer layer_2"
-                    data-speed="2.0">
-                    <button onclick="document.querySelector('#sobre').scrollIntoView({ behavior: 'smooth' })"
-                        class="hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 md:leading-12 cursor-pointer">{{
-                        __('messages.sobre') }}</button>
-                    <button onclick="document.querySelector('#projetos').scrollIntoView({ behavior: 'smooth' })"
-                        class="hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 md:leading-12 cursor-pointer">{{
-                        __('messages.projetos') }}</button>
-                    <button onclick="document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' })"
-                        class="hover:scale-125 hover:filter-[drop-shadow(0px_0px_12px_rgba(0,0,0,0.6))] duration-300 md:leading-12 cursor-pointer">{{
-                        __('messages.skills') }}</button>
-                </div>
+                <livewire:components.about />
             </div>
-        </nav>
+
+            <section class="">
+                <livewire:components.under-banner />
+
+                <livewire:components.projects />
+
+                <livewire:components.skills />
+
+                <livewire:components.experience />
+            </section>
+
+        </section>
     </main>
 
     <script src="assets/js/script.js"></script>
